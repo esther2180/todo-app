@@ -1,4 +1,4 @@
-# React Starter
+# To Do App
 
 > To do app built with ReactJS
 
