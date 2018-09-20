@@ -43,7 +43,7 @@ class AddItem extends Component {
                 </div>
                 <div className="row">
                     <div className="col s8 offset-s2 right-align">
-                        <button className="btn pink lighten-1">Add Item</button>
+                        <button className="btn blue darken-4">Add Item</button>
                     </div>
                 </div>
             </form>
