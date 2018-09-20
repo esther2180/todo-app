@@ -31,6 +31,18 @@ class App extends Component {
         });
     }
 
+    deleteItem = index => {
+        const {list} = this.state;
+
+        const listCopy = list.slice();  //makes a copy of an array
+
+        listCopy.splice(index, 1);  //remove from that copy array
+
+        this.setState({
+            list: listCopy  //reset the array list
+        });
+    }
+
     render() {
         const { list } = this.state;
 
@@ -38,7 +50,7 @@ class App extends Component {
             <div className="container">
                 <h1 className="center">To Do App</h1>
                 <AddItem add={this.addItem} />
-                <List data={list}/>
+                <List data={list} delete={this.deleteItem} />
             </div>
         );
     }
